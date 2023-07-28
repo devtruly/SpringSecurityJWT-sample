@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://:3356/jwt_test?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: love1004
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: true
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
